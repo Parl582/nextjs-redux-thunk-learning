@@ -14,9 +14,12 @@ function Todos() {
 
   return (
     <div>
-      <ul>
+      <h1 className="text-3xl font-bold px-4 py-4"> Redux Thunk Learning </h1>
+      <ul className="flex gap-2 flex-wrap p-4">
         {todo?.map((elm) => (
-          <li key={elm.id}> {elm.id} </li>
+          <li key={elm.id} className="px-2 py-4 border w-max">
+            {elm.title}
+          </li>
         ))}
       </ul>
     </div>
